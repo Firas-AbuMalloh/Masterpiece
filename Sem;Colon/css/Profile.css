@@ -1,0 +1,124 @@
+body {
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(17deg, rgba(0,0,0,1) 0%, rgba(67,67,67,1) 50%, rgba(67,67,67,1) 100%);
+  background: -webkit-linear-gradient(17deg, rgba(0,0,0,1) 0%, rgba(67,67,67,1) 50%, rgba(67,67,67,1) 100%);
+  background: linear-gradient(17deg, rgba(0,0,0,1) 0%, rgba(67,67,67,1) 50%, rgba(67,67,67,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#434343",GradientType=1);
+    margin: 0;
+    padding: 0;
+  }
+  .main-container {
+    top: 18vh;
+    max-width: 600px;
+    margin: 10px auto 25vh;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* To position the edit profile button */
+  }
+  .edit-profile-btn {
+    position: absolute;
+    top: 4vh;
+    right: 3vh;
+    background: #93a8af;
+    color: rgba(24, 80, 98, 1);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 12vh;
+    z-index: 9;
+    justify-content: center;
+  }
+  .edit-profile-btn i {
+    font-size: 16px;
+  }
+  .profile-card {
+    background: rgb(0,0,0);
+  background: -moz-linear-gradient(17deg, rgba(0,0,0,1) 0%, rgba(67,67,67,1) 50%, rgba(67,67,67,1) 100%);
+  background: -webkit-linear-gradient(17deg, rgba(0,0,0,1) 0%, rgba(67,67,67,1) 50%, rgba(67,67,67,1) 100%);
+  background: linear-gradient(17deg, rgba(0,0,0,1) 0%, rgba(67,67,67,1) 50%, rgba(67,67,67,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#434343",GradientType=1);
+    
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+  }
+  .profile-card h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  .account-balance {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  .toggle-balance {
+    cursor: pointer;
+    font-size: 14px;
+    color: #ddd;
+  }
+  .qr-button {
+    background: #fff;
+    color: #185062;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .action-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .action-btn {
+    background: #f0f0f0;
+    color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    width: 45%;
+  }
+  .action-btn:hover {
+    background: #e0e0e0;
+  }
+  .feature-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 boxes per row */
+    gap: 15px; /* Space between boxes */
+  }
+  .feature-box {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .feature-box:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+  .feature-box i {
+    font-size: 32px;
+    color: #185062;
+    margin-bottom: 10px;
+  }
+  .feature-box span {
+    font-size: 16px;
+    display: block;
+  }
+
+  

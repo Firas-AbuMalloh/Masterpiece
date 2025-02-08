@@ -1,0 +1,826 @@
+@import url("common.css");
+
+.hero {
+  background-color: ; /* You might want to set a background color */
+  margin-top: 30vh;
+  padding: 0px;
+  height: 50vh;
+  z-index: -1;
+}
+
+.hero {
+  padding-top: 30vh; /*  Consider adjusting this for smaller screens later */
+  padding-bottom: 10vh; /* Add some bottom padding */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+
+.gallery {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+.gallery img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.2);
+}
+
+.game-section .item {
+  width: 320px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.game-section .item-desc {
+  padding: 20px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  width: 100%;
+}
+
+.card-img-top {
+  height: 19vh;
+}
+
+.card {
+  margin-top: 4vh;
+}
+
+@media (max-width: 460px) {
+  .headerRed img {
+    width: 45vh;
+    margin: 2vh;
+  }
+}
+
+/* header Area End */
+
+@media (max-width: 360px) {
+  .header-area {
+    height: 60px;
+    padding: 0 10px;
+  }
+
+  .header-area .main-nav .logo {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .header-area .menu-trigger {
+    top: 15px;
+    right: 10px;
+  }
+
+  .hero {
+    height: auto; /* Changed from 30vh to auto */
+    padding-top: 10vh; /* Reduced padding-top */
+    padding-bottom: 5vh; /* Added padding-bottom */
+    margin-top: 10vh; /* Reduced margin-top */
+  }
+
+  .hero h1 {
+    font-size: 18px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .card-img-top {
+    height: 15vh;
+  }
+
+  .gallery img {
+    width: 100px;
+    height: 80px;
+  }
+
+  .game-section .item {
+    width: 90%; /* Adjusted width for smaller screens */
+    height: 250px;
+    margin-left: 5%; /* Center items */
+    margin-right: 5%;
+  }
+
+  .game-section {
+    padding-top: 10vh; /* Reduced padding-top */
+    height: auto; /* Height to auto */
+    margin-top: 5vh; /* Reduced margin-top */
+  }
+
+  .cardd {
+    margin-top: 10vh !important; /* Adjusted margin-top */
+  }
+}
+
+/******* Fonts Import Start **********/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/********* Fonts Face CSS End **********/
+
+/******* Common Element CSS Start ******/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+
+  background-color: black;
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(67, 67, 67, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(67, 67, 67, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(67, 67, 67, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#434343",GradientType=1);
+
+
+  margin: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.clear {
+  clear: both;
+}
+
+img {
+  max-width: 100%;
+  border: 0px;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+a:focus,
+a:active,
+a:visited,
+a:hover {
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover {
+  color: #e73700;
+}
+
+h2 {
+  margin-bottom: 48px;
+  padding-bottom: 16px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  position: relative;
+  text-transform: capitalize;
+}
+
+h3 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+button {
+  outline: none !important;
+}
+
+/******* Common Element CSS End *********/
+
+/* -------- title style ------- */
+.line-title {
+  position: relative;
+  width: 400px;
+}
+
+.line-title::before,
+.line-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.line-title::before {
+  width: 100%;
+  background: #f2f2f2;
+}
+
+.line-title::after {
+  width: 32px;
+  background: #e73700;
+}
+
+/******* Middle section CSS Start ******/
+/* -------- Landing page ------- */
+.game-section {
+  margin: 15vh;
+  padding: 0px;
+  height: auto; /* Changed from 50vh to auto */
+  padding-top: 5vh; /* Reduced padding-top */
+}
+
+.game-section .owl-stage {
+  margin: 15px 0;
+  display: flex;
+  display: -webkit-flex;
+}
+
+.game-section .item {
+  margin: 0 15px 60px;
+  width: 320px;
+  height: 400px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+  background: #343434 no-repeat center center / cover;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.game-section .item.active {
+  width: 500px;
+  box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+}
+
+.game-section .item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.game-section .item-desc {
+  padding: 0 24px 12px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform: translateY(calc(100% - 54px));
+  -webkit-transform: translateY(calc(100% - 54px));
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+.game-section .item.active .item-desc {
+  transform: none;
+  -webkit-transform: none;
+}
+
+.game-section .item-desc p {
+  opacity: 0;
+  -webkit-transform: translateY(32px);
+  transform: translateY(32px);
+  transition: all 0.4s ease-in-out 0.2s;
+  -webkit-transition: all 0.4s ease-in-out 0.2s;
+}
+
+.game-section .item.active .item-desc p {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.game-section .owl-theme.custom-carousel .owl-dots {
+  margin-top: -50px;
+  position: relative;
+  z-index: 5;
+}
+
+/******** Middle section CSS End *******/
+
+/***** responsive css Start ******/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  h2 {
+    margin-bottom: 32px;
+  }
+
+  h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  /* -------- Landing page ------- */
+  .game-section {
+    padding: 50px 30px;
+    margin-top: 5vh; /* Reduced margin-top */
+  }
+
+  .game-section .item {
+    margin: 0 12px 60px;
+    width: 260px;
+    height: 360px;
+  }
+
+  .game-section .item.active {
+    width: 400px;
+  }
+
+  .game-section .item-desc {
+    transform: translateY(calc(100% - 46px));
+    -webkit-transform: translateY(calc(100% - 46px));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  h2 {
+    margin-bottom: 32px;
+  }
+  h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .line-title {
+    width: 330px;
+  }
+
+  /* -------- Landing page ------- */
+  .game-section {
+    padding: 50px 30px 40px;
+    margin-top: 12vh;
+  }
+  .game-section .item {
+    margin: 0 12px 60px;
+    width: 240px;
+    height: 330px;
+  }
+  .game-section .item.active {
+    width: 360px;
+  }
+  .game-section .item-desc {
+    transform: translateY(calc(100% - 42px));
+    -webkit-transform: translateY(calc(100% - 42px));
+  }
+
+  .cardd {
+    margin-top: 10vh !important; /* Adjusted margin-top */
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Modified to max-width: 768px */
+  body {
+    font-size: 14px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  h3 {
+    margin: 0 0 8px;
+    font-size: 19px;
+    line-height: 24px;
+  }
+  .line-title {
+    width: 250px;
+  }
+
+  /* -------- Landing page ------- */
+  .game-section {
+    padding: 0px 15px 20px;
+    margin-top: 12vh;
+  }
+  .game-section .item {
+    margin: 0 10px 40px;
+    width: 200px;
+    height: 280px;
+  }
+  .game-section .item.active {
+    width: 270px;
+    box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+  }
+  .game-section .item-desc {
+    padding: 0 14px 5px;
+    transform: translateY(calc(100% - 42px));
+    -webkit-transform: translateY(calc(100% - 42px));
+  }
+
+  .cardd {
+    margin-top: 10vh !important; /* Adjusted margin-top */
+    justify-content: center;
+  }
+}
+
+.game-slider {
+  /* background: rgb(24,80,98);
+  background: -moz-radial-gradient(circle, rgba(24,80,98,1) 0%, rgba(6,34,62,0.9159313383556548) 85%);
+  background: -webkit-radial-gradient(circle, rgba(24,80,98,1) 0%, rgba(6,34,62,0.9159313383556548) 85%);
+  background: radial-gradient(circle, rgba(24,80,98,1) 0%, rgba(6,34,62,0.9159313383556548) 85%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#185062",endColorstr="#06223e",GradientType=1);  height: 85vh; */
+}
+.card-class-background {
+  background-color: #50484659;
+  display: flex
+;
+  flex-direction: column;
+  align-items: center;
+  }
+.card-class-background h2{
+  color: #fff;
+}
+/* main slaider end here */
+
+.cardd {
+  margin: 15vh;
+  justify-content: center;
+  margin-top: 25rem; /* Consider adjusting this or removing !important */
+}
+
+.row {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+.slider {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  background: white;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  overflow: hidden;
+}
+.slide {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  animation: slideshow 30s linear infinite;
+}
+.slide img {
+  height: 70px;
+  padding: 0 30px 0 30px;
+}
+@keyframes slideshow {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* الشريط الثاني من اليسار الى اليمين */
+.slider2 {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  background: white;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  overflow: hidden;
+}
+
+.slide2 {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  animation: slideshow2 20s linear infinite;
+}
+
+.slide2 img {
+  height: 70px;
+  padding: 0 30px;
+}
+
+@keyframes slideshow2 {
+  0% {
+      transform: translateX(-100%); /* بداية الحركة من اليمين */
+  }
+  100% {
+      transform: translateX(100%); /* نهاية الحركة إلى اليسار */
+  }
+}
+
+  
+#secure-payment {
+  background-image: url("/img/img/Utility-Customer-Payment.jpg") ;
+  filter: blur(2);
+
+}
+
+
+
+
+
+
+
+
+/* الناف بار بنصض الصفحة الاسود */
+
+.custom-navbar {
+  display: flex;
+  background-color: #222;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.custom-category {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #111;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.custom-category i {
+  margin-right: 8px;
+}
+
+.custom-menu {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+}
+
+.custom-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+.custom-menu a:hover {
+  background-color: #333;
+}
+
+/* القائمة المنسدلة */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  background-color: #222;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.dropdown-menu a:hover {
+  background-color: #333;
+}
+
+/* عند تصغير الشاشة */
+@media (max-width: 768px) {
+  .custom-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      background-color: #222;
+  }
+
+  .custom-menu a {
+      text-align: center;
+      width: 100%;
+      padding: 15px;
+      border-bottom: 1px solid #333;
+  }
+
+  .menu-active {
+      display: flex;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* حاوية الكروت البيض بنص الصفحة */
+        .card-container {
+          padding-top:10vh ;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 20px;
+      }
+
+      /* تصميم الكارد */
+      .cards12 {
+          position: relative;
+          width: 250px;
+          height: 350px;
+          background-color: #fff;
+          border-radius: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+          transition: transform 0.3s ease;
+      }
+
+      /* تأثير عند التحويم على الكارد */
+      .cards12:hover {
+          transform: scale(1.05);
+      }
+
+      /* صورة الكارد */
+      .cards12 img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+      }
+
+      /* محتوى الكارد */
+      .card-content {
+          padding: 15px;
+          text-align: center;
+      }
+
+      .card-content h3 {
+          font-size: 18px;
+          margin: 10px 0;
+          color: #333;
+      }
+
+      .card-content p.price {
+          font-size: 16px;
+          color: #e74c3c;
+          font-weight: bold;
+      }
+
+      /* وصف الكارد (مخفي افتراضيًا) */
+      .card-description {
+          position: absolute;
+          bottom: -100%; /* خارج الكارد */
+          left: 0;
+          width: 100%;
+          padding: 15px;
+          background-color: rgba(0, 0, 0, 0.8);
+          color: #fff;
+          font-size: 14px;
+          line-height: 1.4;
+          transition: bottom 0.3s ease;
+      }
+
+      /* ظهور الوصف عند التحويم */
+      .cards12:hover .card-description {
+          bottom: 0; /* يظهر داخل الكارد */
+      }
+
+
+
+
+
+
+
+
+/* الكاردات الرئيسية السود */
+      .cards-container {
+        display: flex
+        ;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding-top: 6vh;
+            padding-bottom: 6vh;
+            background-color: #ffffff1a;
+            width: 95%;
+            border-radius: 15px;
+    }
+    .card3 {
+        position: relative;
+        width: 250px;
+        background: #2e2e2e;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        transition: transform 0.3s;
+    }
+    .card3:hover {
+        transform: scale(1.05);
+    }
+    .card3 img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    .card-content {
+        padding: 15px;
+    }
+    .card3 h3 {
+        margin: 10px 0;
+        color: #f39c12;
+    }
+    .card3 .price {
+        color: #ffcc00;
+        font-weight: bold;
+    }
+    .card3 .description {
+        opacity: 0;
+        transition: opacity 0.3s;
+        color: #ddd;
+        font-size: 14px;
+    }
+    .card3:hover .description {
+        opacity: 1;
+    }
+
+
+
+
+
+

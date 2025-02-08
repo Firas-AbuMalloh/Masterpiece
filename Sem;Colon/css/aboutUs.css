@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 16vh;
+    padding: 20px;
+}
+.text-block {
+    text-align: left;
+}
+.text-block h1 {
+    color: #f39c12;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.text-block p {
+    color: #ccc;
+    font-size: 16px;
+}
+.card-image {
+    width: 250px;
+}
+.main-grid {
+    max-width: 900px;
+    margin: auto;
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    grid-auto-flow: dense; /* يسمح بوجود مسافات غير منتظمة */
+}
+.info-card {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+.section-title {
+    color: #f39c12;
+    margin-bottom: 15px;
+}
+.section-text {
+    line-height: 1.8;
+}
+.highlight-text {
+    color: #ffcc00;
+    font-weight: bold;
+}
+/* جعل بعض الكاردات أكبر */
+.info-card:nth-child(3n) {
+    grid-column: span 2; /* يجعل الكارد يأخذ مساحة عمودين */
+}
+.info-card:nth-child(5n) {
+    grid-row: span 2; /* يجعل الكارد يأخذ مساحة صفين */
+}
+.icon {
+    font-size: 40px;
+    color: #f39c12;
+    margin-bottom: 10px;
+}

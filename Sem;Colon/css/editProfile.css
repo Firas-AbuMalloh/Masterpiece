@@ -1,0 +1,129 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(24, 80, 98);
+    background: -moz-radial-gradient(
+      circle,
+      rgba(24, 80, 98, 1) 0%,
+      rgba(6, 34, 62, 0.9159313383556548) 85%
+    );
+    background: -webkit-radial-gradient(
+      circle,
+      rgba(24, 80, 98, 1) 0%,
+      rgba(6, 34, 62, 0.9159313383556548) 85%
+    );
+    background: radial-gradient(
+      circle,
+      rgba(24, 80, 98, 1) 0%,
+      rgba(6, 34, 62, 0.9159313383556548) 85%
+    );
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.main-container {
+    top: 18vh;
+    max-width: 600px;
+    margin: 10px auto 25vh;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* To position the edit profile button */
+}
+
+/* Edit Profile Button */
+.edit-profile-btn {
+    position: absolute;
+    top: 4vh;
+    right: 4vh;
+    background: #93a8af;
+    color: rgba(24, 80, 98, 1);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 24vh;
+    z-index: 9;
+    justify-content: center;
+}
+
+.edit-profile-btn i {
+    font-size: 16px;
+}
+
+/* Profile Card */
+.profile-card {
+    background: rgb(24, 80, 98);
+    background: -moz-radial-gradient(
+      circle,
+      rgba(24, 80, 98, 1) 0%,
+      rgba(6, 34, 62, 0.9159313383556548) 85%
+    );
+    background: -webkit-radial-gradient(
+      circle,
+      rgba(24, 80, 98, 1) 0%,
+      rgba(6, 34, 62, 0.9159313383556548) 85%
+    );
+    background: radial-gradient(
+      circle,
+      rgba(24, 80, 98, 1) 0%,
+      rgba(6, 34, 62, 0.9159313383556548) 85%
+    );
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.profile-card h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Form Styling */
+.profile-form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 97%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Submit Button */
+.submit-btn {
+    background: #185062;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #144552;
+}
